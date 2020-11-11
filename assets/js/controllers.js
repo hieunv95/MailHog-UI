@@ -447,7 +447,7 @@ mailhogApp.controller('MailCtrl', function ($scope, $http, $sce, $timeout) {
     if(contentTransferEncoding) {
       switch (contentTransferEncoding.toLowerCase()) {
         case 'quoted-printable':
-          content = content.replace(/=[\r\n]+/gm,"");
+          content = content.replace(/=\r\n/gm, "");
           content = unescapeFromQuotedPrintableWithoutRFC2047(content, charset);
           break;
         case 'base64':
