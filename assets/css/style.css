@@ -166,3 +166,24 @@
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
 }
+
+@media only screen and (max-width: 768px)
+{
+  .navbar-static-top {
+    display: none;
+  }
+  .sidebar {
+    display: none;
+  }
+  .mail-content {
+    margin-top: 0;
+  }
+  .content {
+    position: relative;
+    top: 0;
+    padding-bottom: 30px;
+  }
+  #preview-plain {
+    height: 100% !important;
+  }
+}
